@@ -23,4 +23,10 @@
 ### file system:
 - controls how to store and retrieve data
 #### windows uses:
-  
+- NTFS
+- FAT 12, 16, 32...
+#### linux uses:
+- EXT 4 (most common, not limited, can support a huge amount of data)
+- EXT 3
+- BTRFS
+- XFS
