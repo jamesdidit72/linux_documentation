@@ -54,4 +54,18 @@ hardware
         - forms of shell
             - sh, bash, dash, tcsl, ksh, zsh
             - sh & bash are used on Ubuntu
-            - zsh is used on linux  
+            - zsh is used on linux
+- main distributions 
+  - debian
+    - not commerical
+    - ubuntu is one
+    - kali is based on debian  
+  - fedora
+    - examples:
+      - redhat
+      -centos
+  - arch linux
+    - for advanced users
+    - powerful
+    - not covered in this course
+    

@@ -15,5 +15,12 @@
     - settings, remote desktop, disable
   - disable guest account
   - encrypt data
-    - fle explorer, right-click on driver, turn on BitLocker
+    - file explorer, right-click on driver, turn on BitLocker
+  
+
+#### use kali linux for Cyber Security
+#### use centos on the servers
+### file system:
+- controls how to store and retrieve data
+#### windows uses:
   
