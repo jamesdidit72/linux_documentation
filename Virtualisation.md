@@ -1,3 +1,7 @@
+# virtualisation
+## separates the software from the hardware
+## mimics the hardware as the software
+
 ```
 Application             App  App  App
                         os   os   os
@@ -69,3 +73,39 @@ hardware
     - powerful
     - not covered in this course
     
+### vagrant:
+#### manages virtual machines
+#### creates its own vm but has the files accessible to the physical system, preventing crossovers between different software’s, so when the files are shared they can be loaded up and be ran successfully, because the vagrant file mimics the environment that it will feature on
+
+#### command prompt (windows(vagrant)):
+| Key(s) | Description | Example |
+|:---------: |:----------------------------: |:--------: |
+| mkdir | creates file | mkdir FILENAME |
+| cd | change directory |  | 
+| vagrant | shows the available commands |  | 
+| Vagrant init hashicorp/bionic64   | bionic64 is the code name for ubuntu 64 |  | 
+| dir | prints directory |  | 
+| notepad vagrant | opens vagrant as a file |  | 
+| Vagrant up  | start vm command |  | 
+| Vagrant destroy  | # deletes the vm |  | 
+| Ls /vagrant/ | lists contents |  |
+
+#### Difference between VM and Docker containers
+**What is Docker?**
+
+docker is a platform where you can develop and run apps through containers. These containers allow for software to be delivered quickly, allowing you to separate your apps from your main system.
+Can exist on Windows, Mac and Linux. A daemon is an app that runs in the background without interaction from the user.
+#### command prompt (Linux(Docker)):
+when in bash shell, use ‘exit’ to stop the shell
+
+| Key(s) | Description | Example |
+|:---------: |:----------------------------: |:--------: |
+| uname -a | shows the version |  |
+| Docker run -it ubuntu bash | it = interactive terminal, bash = bash shell |  | 
+| Docker ps | shows active containers # -a shows all of the containers including the stopped ones |  | 
+| Docker kill NAME | kills the container immediately |  | 
+| Docker stop NAME | ends the container gracefully |  | 
+| Docker start NAME | starts the container, even if its been killed |  | 
+| Docker exec -it NAME bash | telling docker that NAME container is open and a shell should be started |  | 
+| Docker rm NAME | removes the container, can only be removed if the container has been stopped |  | 
+
