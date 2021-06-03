@@ -90,11 +90,30 @@ hardware
 | Vagrant destroy  | # deletes the vm |  | 
 | Ls /vagrant/ | lists contents |  |
 
-#### Difference between VM and Docker containers
+#### Difference between Vagrant (V) and Docker containers (D)
+- scopes of isolation
+    - V has the highest level of isolation available without using separate hardware
+    - D runs as an isolated processes in the host operating system
+    - D can run as a privileged process, meaning that isolation is effectively at the user level.
+- Security Levels
+    - V is a completely separate operating system.
+    - D is only as secure as the host allows
+- Speed of launch
+    - D is faster to start
+    - V has a whole VM to launch
+- resource consumption
+    - D uses less as it only loads parts of the OS that is required for the app to work
+    - v loads an entire OS
+- Operational Limitations
+    - V can support any OS
+    - D struggles with cross platform
+
 **What is Docker?**
 
 docker is a platform where you can develop and run apps through containers. These containers allow for software to be delivered quickly, allowing you to separate your apps from your main system.
 Can exist on Windows, Mac and Linux. A daemon is an app that runs in the background without interaction from the user.
+
+any data that is created within a container (like log files) is not retained between instantiations. Every container starts with a fresh copy of the container image.
 #### command prompt (Linux(Docker)):
 when in bash shell, use ‘exit’ to stop the shell
 
