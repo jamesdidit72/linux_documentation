@@ -6,7 +6,7 @@
 - used to make things clearer for the user
 - linux doesnt care about extensions
     - cares about meta data
-###control permissions    
+### control permissions    
 | Key(s) | Description | Example |
 |:---------: |:----------------------------: |:--------: |
 | ls -l | prints everything in the file path |  |
